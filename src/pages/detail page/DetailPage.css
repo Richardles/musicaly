@@ -1,0 +1,10 @@
+.audio-action{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.fav-btn img{
+    width: 30px;
+    margin: 0px 20px;
+}

@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import DetailPage from "./pages/detail page/DetailPage";
+import FavouritesPage from "./pages/favourites page/FavouritesPage";
+import ListPage from "./pages/list page/ListPage";
+import SearchPage from "./pages/search page/SearchPage";
 
 function App() {
+  // localStorage.clear()
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Router>
+      <Link to="/favourites">
+        Favorite Page
+      </Link>
+      <Link to="/">
+        Home
+      </Link>
+      <Switch>
+        <Route path="/detail/:albumId">
+          <DetailPage/>
+        </Route>
+        <Route path="/favourites">
+          <FavouritesPage/>
+        </Route>
+        <Route path="/list">
+          <ListPage/>
+        </Route>
+        <Route path="/">
+          <SearchPage/>
+        </Route>
+      </Switch>
+    </Router>
+  )
 }
 
 export default App;

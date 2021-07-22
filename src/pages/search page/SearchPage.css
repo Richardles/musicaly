@@ -1,0 +1,22 @@
+.card{
+    max-width: 540px;
+    transition: 0.2s;
+}
+
+.card:hover{
+    box-shadow: 0px 0px 5px black;
+    cursor: pointer;
+}
+
+.artist-box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.search-bar{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+}
