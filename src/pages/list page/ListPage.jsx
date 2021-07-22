@@ -1,7 +1,0 @@
-function ListPage(){
-    return(
-        <div>List</div>
-    )
-}
-
-export default ListPage

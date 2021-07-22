@@ -6,7 +6,6 @@ import {
 } from "react-router-dom";
 import DetailPage from "./pages/detail page/DetailPage";
 import FavouritesPage from "./pages/favourites page/FavouritesPage";
-import ListPage from "./pages/list page/ListPage";
 import SearchPage from "./pages/search page/SearchPage";
 
 function App() {
@@ -25,9 +24,6 @@ function App() {
         </Route>
         <Route path="/favourites">
           <FavouritesPage/>
-        </Route>
-        <Route path="/list">
-          <ListPage/>
         </Route>
         <Route path="/">
           <SearchPage/>
